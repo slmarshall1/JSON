@@ -4,7 +4,7 @@ var btn = document.getElementById("btn");
 
 btn.addEventListener("click", function(){
 var ourRequest = new XMLHttpRequest();
-ourRequest.open("GET", "https://raw.githubusercontent.com/slmarshall1/JSON/master/jason_example_" + pageCounter + ".js");
+ourRequest.open("GET", "https://raw.githubusercontent.com/slmarshall1/JSON/master/json_example_" + pageCounter + ".js");
 ourRequest.onload = function() {
   var ourData = JSON.parse(ourRequest.responseText);
   renderHTML(ourData);
